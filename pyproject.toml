@@ -1,0 +1,32 @@
+[project]
+name = "cs2coach"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Vishnu Reshamwala", email = "vishnureshamwala@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "awpy>=3.1.1",
+    "demoparser2==0.42.0",
+    "duckdb>=2.0.0",
+    "lightgbm>=4.7.0",
+    "ollama>=0.6.3",
+    "plotly>=7.1.0",
+    "polars>=2.1.0",
+    "pyarrow>=26.0.0",
+    "scikit-learn>=1.9.1",
+    "streamlit>=1.66.1",
+    "torch>=2.15.0",
+    "typer>=0.27.3",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]
